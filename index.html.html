@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+<link rel="stylesheet" href="stylesheet/calcu.css">
+  </head>
+  <body>
+    <div class="calculator-screen"><p class="js-calculate"></p></div>
+   <div class="calculator-div">
+      <!--This is the TOP portion of the calculator-->
+
+    <button onclick="
+    calbutton('1');
+    ">1</button>
+    <button onclick="
+    calbutton('2');
+    ">2</button>
+    <button onclick="
+   calbutton('3');
+    ">3</button>
+    <button class="calculator-operators" onclick="
+    calbutton('+');
+    ">+</button>
+        
+        <!--This is the 2nd layer portion of the calculator-->
+  <button onclick="
+  calbutton('4');
+  ">4</button>
+  <button onclick="
+  calbutton('5');
+  ">5</button>
+  <button onclick="
+  calbutton('6');
+  ">6</button>
+      <button class="calculator-operators" onclick="
+      calbutton('-');"
+      
+      >-</button>
+<!--This is the 3rd layer portion of the calculator-->
+<button onclick="
+calbutton('7');
+">7</button>
+<button onclick="
+calbutton('8');
+">8</button>
+<button onclick="
+calbutton('9');
+">9</button>
+    <button class="calculator-operators" onclick="
+calbutton(' * ');
+    ">*</button>
+ <!--This is the 4th layer portion of the calculator-->   
+    <button onclick="
+calbutton('0');
+">0</button>
+<button class="calculator-operators" onclick="
+calbutton('.');
+">.</button>
+<button class="calculator-operators" onclick="
+eval(calculation);
+calculation = eval(calculation);
+updateCalculation();
+console.log(calculation);
+">=</button>
+<button class="calculator-operators" onclick="
+calbutton('/')
+">/</button>
+<!--This is the bottom portion of the calculator-->
+<button class="calculator-operators" onclick="
+calculation = '';
+updateCalculation();
+console.log('Cleared');
+alert('Cleared!');
+">
+  Clear
+</button>
+
+    </div>
+  </body>
+
+<script src="scripts/calcu.js">
+</script>
+
+    
+</html>
